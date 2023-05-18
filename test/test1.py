@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 url1 = 'https://cn.bing.com/'
@@ -12,10 +13,9 @@ driver.find_element_by_xpath('//*[@id="search_icon"]').click()
 
 sleep(3)
 driver.find_element_by_xpath('//*[@id="sb_form_q"]').clear()
-driver.find_element_by_xpath('//*[@id="sb_form_q"]').send_keys("公积金贷款条件")
-driver.find_element_by_xpath('//*[@id="search_icon"]').click()
+driver.find_element_by_xpath('//*[@id="sb_form_q"]').send_keys("公积金贷款条件", Keys.ENTER)
 sleep(3)
 driver.back()
-sleep(1)
+sleep(2)
 
 driver.close()
