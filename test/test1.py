@@ -16,7 +16,7 @@ driver.find_element_by_xpath('//*[@id="sb_form_q"]').clear()
 driver.find_element_by_xpath('//*[@id="sb_form_q"]').send_keys("公积金贷款条件", Keys.ENTER)
 sleep(3)
 driver.back()
-sleep(5)
+sleep(7)
 
 driver.close()
 
