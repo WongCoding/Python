@@ -17,7 +17,7 @@ driver.find_element_by_xpath('//*[@id="sb_form_q"]').send_keys("公积金贷款�
 sleep(3)
 driver.back()
 sleep(7)
-sleep(1)
+sleep(2)
 
 driver.close()
 
